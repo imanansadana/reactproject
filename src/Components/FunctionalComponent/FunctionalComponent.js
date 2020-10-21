@@ -31,9 +31,12 @@ const FunctionalComponent = () => {
 
   return (
     <div>
-      {counter === 1 ? <h1>One</h1> : <h2>Two</h2>}
-      <button onClick={changeState}>Click Me</button>
-      <button onClick={fun}>Click Me</button>
+      {counter === 1 ? <h1>One</h1> : <h2>More than One</h2>}
+      <h2>Number {counter}</h2>
+      <p>Changing and using state with this one</p>
+      <button onClick={fun}>Add Number</button>
+      <p>Just changing the state with this button, not using it</p>
+      <button onClick={changeState}>Changing State</button>
     </div>
   );
 };

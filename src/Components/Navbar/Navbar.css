@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: steelblue;
+    margin-bottom: 20px;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+}
+.navlinks>li{
+    padding: 12px 32px;
+}
+.navlinks>li:hover{
+    background-color: lightgray;
+}

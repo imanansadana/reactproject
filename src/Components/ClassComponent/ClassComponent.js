@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NameCard from "../NameCard/NameCard";
+import NameCard from "./NameCard/NameCard";
 
 class ClassComponent extends Component {
   state = {
@@ -46,6 +46,9 @@ class ClassComponent extends Component {
   render() {
     return (
       <div className="App">
+        <h1>
+          I am a class based component with state and props and event handlers
+        </h1>
         {this.state.students.map((item, index) => {
           return (
             <NameCard
