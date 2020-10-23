@@ -4,6 +4,7 @@
     align-items: center;
     background-color: steelblue;
     margin-bottom: 20px;
+    width: 100%;
 }
 .logo{
     margin: 0;
@@ -15,9 +16,13 @@
     list-style-type: none;
     margin: 0;
 }
-.navlinks>li{
+.navlinks li{
     padding: 12px 32px;
+    color: white;
 }
-.navlinks>li:hover{
+a{
+    text-decoration: none;
+}
+.navlinks li:hover{
     background-color: lightgray;
 }

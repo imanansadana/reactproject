@@ -1,24 +1,18 @@
 import React, { Component } from "react";
 import NameCard from "./NameCard/NameCard";
+import "./ClassComponent.css";
+import MockData from "./MockData";
 
 class ClassComponent extends Component {
-  state = {
-    students: [
-      { id: "ffdjhvv", name: "Manan", text: "First Text" },
-      { id: "ffdv", name: "Ankush", text: "Second Text" },
-      { id: "ffdvghknv", name: "Ashish", text: "Third Text" },
-      { id: "ffcfghkjbdv", name: "Madhav", text: "Fourth Text" },
-    ],
-    othervar: 1,
-  };
+  state = MockData;
 
   nameHandler = (name) => {
     this.setState({
       students: [
-        { name: "Manan", text: "First Text" },
-        { name: name, text: "Second Text" },
-        { name: "Ashish", text: "Third Text" },
-        { name: "Madhav", text: "Fifth Text" },
+        { id: "1", name: "Manan", text: "First Text" },
+        { id: "2", name: name, text: "Second Text" },
+        { id: "3", name: "Ashish", text: "Third Text" },
+        { id: "4", name: "Madhav", text: "Fifth Text" },
       ],
     });
     console.log(this.state);
@@ -27,10 +21,10 @@ class ClassComponent extends Component {
   changeNameHandler = (event) => {
     this.setState({
       students: [
-        { name: "Manan", text: "First Text" },
-        { name: event.target.value, text: "Second Text" },
-        { name: "Ashish", text: "Third Text" },
-        { name: "Madhav", text: "Fifth Text" },
+        { id: "1", name: "Manan", text: "First Text" },
+        { id: "2", name: event.target.value, text: "Second Text" },
+        { id: "3", name: "Ashish", text: "Third Text" },
+        { id: "4", name: "Madhav", text: "Fifth Text" },
       ],
     });
   };
@@ -49,21 +43,23 @@ class ClassComponent extends Component {
         <h1>
           I am a class based component with state and props and event handlers
         </h1>
-        {this.state.students.map((item, index) => {
-          return (
-            <NameCard
-              key={item.id}
-              del={() => this.deleteNameHandler(index)}
-              change={this.changeNameHandler}
-              name={item.name}
-              text={item.text}
-            ></NameCard>
-          );
-        })}
-        <button onClick={() => this.nameHandler("Rajat")}>Change Name</button>
-        <button onClick={this.nameHandler.bind(this, "Satish")}>
-          Change Name
-        </button>
+        <div className="cards">
+          {this.state.students.map((item, index) => {
+            return (
+              <NameCard
+                key={item.id}
+                id={item.id}
+                del={() => this.deleteNameHandler(index)}
+                change={this.changeNameHandler}
+                name={item.name}
+                text={item.text}
+              ></NameCard>
+            );
+          })}
+        </div>
+
+        <button onClick={() => this.nameHandler("Karan")}>Karan</button>
+        <button onClick={this.nameHandler.bind(this, "Arjun")}>Arjun</button>
       </div>
     );
   }

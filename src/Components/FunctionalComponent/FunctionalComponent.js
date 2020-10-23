@@ -31,6 +31,7 @@ const FunctionalComponent = () => {
 
   return (
     <div>
+      <h1>I am a functional component using Hooks</h1>
       {counter === 1 ? <h1>One</h1> : <h2>More than One</h2>}
       <h2>Number {counter}</h2>
       <p>Changing and using state with this one</p>
