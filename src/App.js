@@ -4,6 +4,7 @@ import FunctionalComponent from "./Components/FunctionalComponent/FunctionalComp
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import LifeCycleMethods from "./Components/LifeCycleMethods/LifeCycleMethods";
+import FunctionalHooks from "./Components/FunctionalHooks/FunctionalHooks";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import NameDetails from "./Components/ClassComponent/NameCard/NameDetails/NameDetails";
@@ -17,6 +18,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/lifecyclemethods" component={LifeCycleMethods} />
+            <Route path="/functionalhooks" component={FunctionalHooks} />
             <Route path="/class" exact component={ClassComponent} />
             <Route path="/functional" component={FunctionalComponent} />
             <Route path="/class/:id" component={NameDetails} />

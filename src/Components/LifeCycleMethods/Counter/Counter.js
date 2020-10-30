@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
+  constructor(props) {
+    super(props);
+    console.log("Counter Constructed");
+  }
   componentDidMount() {
     console.log("Counter Mounted");
   }
