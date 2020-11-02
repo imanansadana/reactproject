@@ -24,6 +24,9 @@ const Navbar = () => {
           <Link to="/functionalhooks">
             <li>Functional Hooks</li>
           </Link>
+          <Link to="/login">
+            <li>Login</li>
+          </Link>
         </ul>
       </div>
     </div>
