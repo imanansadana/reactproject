@@ -40,14 +40,7 @@ function List() {
     }
 
 
-
-
-
-
-
-
-
-
+  export default List;
     //This is a single list that we used in earlier file   
 //     const people = [
 //         { id: 1, name: 'Chris' },
@@ -61,5 +54,3 @@ function List() {
 //           </div>
 //     );
 //   }
-
-  export default List;

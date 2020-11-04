@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "./App.css"
-import ClassComponent from './ClassComponent/ClassComponent';
-import List from './FunctionalComponent/FunctionalComponent';
+import ClassComponent from './Components/ClassComponent/ClassComponent';
+import FunctionalComponent from './Components/FunctionalComponent/FunctionalComponent.js';
 
 class App extends Component { 
   
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className = "App">         
   <ClassComponent></ClassComponent>
-  <List></List>
+  <FunctionalComponent></FunctionalComponent>
       </div>
     )
   }
