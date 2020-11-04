@@ -8,7 +8,11 @@ export class ClassComponent extends Component {
         return (
             <div>
             <Card  name= "manan" skills = "JS, React" learning = {() =>{
-              return "We will be learning more about react libraries!"
+              return "this is the first card"
+            }}></Card>
+          
+            <Card name= "Vaibhav" skills = "HTML, CSS" learning = {() =>{
+              return "This is the second card"
             }}></Card>
             </div>
         )
