@@ -11,7 +11,6 @@ const Navbar = () => {
           <Link to="/">
             <li>Home</li>
           </Link>
-
           <Link to="/functional">
             <li>Functional Component</li>
           </Link>
@@ -23,6 +22,9 @@ const Navbar = () => {
           </Link>
           <Link to="/functionalhooks">
             <li>Functional Hooks</li>
+          </Link>
+          <Link to="/counter">
+            <li>Counter</li>
           </Link>
           <Link to="/login">
             <li>Login</li>

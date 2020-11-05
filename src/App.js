@@ -9,6 +9,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import NameDetails from "./Components/ClassComponent/NameCard/NameDetails/NameDetails";
 import LoginForm from "./Components/Forms/LoginForm";
+import Counter from "./Components/CounterWithRedux/Counter";
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/functional" component={FunctionalComponent} />
             <Route path="/login" component={LoginForm} />
             <Route path="/class/:id" component={NameDetails} />
+            <Route path="/counter" component={Counter} />
           </Switch>
         </div>
       </BrowserRouter>
