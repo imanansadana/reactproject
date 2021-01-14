@@ -11,7 +11,6 @@ const NameCard = (props) => {
       <Link to={`/class/${props.id}`}>
         <button className="deletebtn green">Show More</button>
       </Link>
-
       <button className="deletebtn" onClick={props.del}>
         Delete
       </button>

@@ -1,9 +1,10 @@
 import React from "react";
 import MockData from "../../MockData";
 
-const NameDetails = (Props) => {
+const NameDetails = (props) => {
+  console.log(props);
   const item = MockData.students.find(
-    (item) => item.id === Props.match.params.id
+    (item) => item.id === props.match.params.id
   );
   return (
     <div>
